@@ -142,6 +142,7 @@ nav .enlaces a:hover {
 }
 
 .grid .card {
+  cursor: pointer;
   background: #FEFEFE;
   padding: 20px;
   border-radius: 5px;
@@ -160,6 +161,18 @@ nav .enlaces a:hover {
   transition: .3s ease all;
 }
 
+.grid .card:hover {
+  top: 30px;
+  -webkit-transition: top 1s ease 0s;
+  transition: top 1s ease 0s;
+}
+
+.grid .card:hover img {
+  -webkit-transition: top .8s ease 0s;
+  transition: top .8s ease 0s;
+  top: -100px;
+}
+
 body.dark .grid .card {
   background: #222222;
   -webkit-box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.16);
@@ -170,9 +183,9 @@ body.dark .grid .card {
   vertical-align: top;
   border-radius: 7px;
   position: absolute;
-  top: -50px;
+  top: -30px;
   width: calc(100% - 40px);
-  max-height: 165px;
+  max-height: 300px;
   -o-object-fit: cover;
      object-fit: cover;
 }

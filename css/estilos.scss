@@ -126,6 +126,7 @@ nav {
 	grid-template-columns: 1fr 1fr 1fr;
 	padding: 40px 0;
 	.card {
+		cursor: pointer;
 		background: $blanco;
 		padding: 20px;
 		border-radius: 5px;
@@ -137,6 +138,16 @@ nav {
 		margin-top: 50px;
 		transition: .3s ease all;
 
+		&:hover {
+			top: 30px;
+			transition: top 1s ease 0s;
+			
+			img{
+				transition: top .8s ease 0s;
+				top: -100px;
+			}
+		}
+
 		body.dark & {
 			background: $grisOscuro;
 			box-shadow: $sombraLight;
@@ -146,9 +157,9 @@ nav {
 			vertical-align: top;
 			border-radius: 7px;
 			position: absolute;
-			top: -50px;
+			top: -30px;
 			width: calc(100% - 40px);
-			max-height: 165px;
+			max-height: 300px;
 			object-fit: cover;
 		}
 	
