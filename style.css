@@ -1,0 +1,49 @@
+.main-container{
+    background-image: url("52f61nfzmwl51.jpg");/*linear-gradient(to right top, #41B883, #7297bd);*/
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-section{
+    background-image: linear-gradient(to right, rgba(255,255,255,0.5), rgba(255,255,255,0.3));
+    width: 70vw;
+    height: 80vh;
+    border-radius: 30px;
+   
+    backdrop-filter: blur(2rem);
+    z-index: 1;
+    border: 1px solid rgba(250, 255, 255, 0.1);   
+
+    display: flex;
+   
+}
+.circle1, .circle2{
+    background-image: linear-gradient(to right, rgba(255,255,255,0.5), rgba(255,255,255,0.3));
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid rgba(250, 255, 255, 0.1);   
+}
+
+.menu{
+    background-image: linear-gradient(to right, rgba(255,255,255,0.5), rgba(255,255,255,0.3));
+    width: 30%;
+    border-radius: 30px;
+}
+
+.page{
+  
+}
+
+.circle1{
+    right: 100px;
+    top: 150px;
+} 
+.circle2{ 
+    top:2px;
+    left: 130px;
+}
