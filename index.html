@@ -11,7 +11,14 @@
   <body>
     <main class="main-container">
       <section class="main-section">
-        <div class="menu">
+        <!-- Menu toggle button -->
+        <div class="menu-toggle-button">
+          <input type="checkbox" class="nav__checkbox" id="nav-toggle" />
+          <label for="nav-toggle" class="nav__button">
+            <span class="nav__icon">&nbsp;</span>
+          </label>
+        </div>
+        <div class="menu nav__nav">
           <div class="avatar-container">
             <img
               src="./images/download.jpg"
@@ -24,12 +31,13 @@
           </div>
           <div class="sidebar-links">
             <ul class="navbar-links">
-              <li><a>About</a></li>
-              <li><a>Projects</a></li>
-              <li><a>Contact</a></li>
-              <li class="resume-btn blob white">
+              <li><a id="about">About</a></li>
+              <li><a id="projects" class="link-select">Projects</a></li>
+              <li><a id="contact">Contact</a></li>
+              <li class="resume-btn">
                 <a
-                  href="/static/media/resume.18f6782c.pdf"
+                  class="blob white"
+                  href="./curriculum2.pdf"
                   target="_blank"
                   rel="noreferrer"
                   >Resume</a
@@ -39,45 +47,50 @@
           </div>
         </div>
         <div class="page">
-          <div class="container">
-            <!-- <div class="box">
+          <div class="about">about</div>
+          <div class="projects show-categories">
+            <div class="container">
+              <!-- <div class="box">
               <img src="https://source.unsplash.com/1000x800" />
               <span>CSS</span>
             </div>-->
-            <div class="box">
-              <img src="https://source.unsplash.com/1000x802" />
-              <span>Image</span>
+              <div class="box">
+                <img src="https://source.unsplash.com/1000x802" />
+                <span>Image</span>
+              </div>
+              <div class="box">
+                <img src="https://source.unsplash.com/1000x804" />
+                <span>Hover</span>
+              </div>
+              <div class="box">
+                <img src="https://source.unsplash.com/1000x806" />
+                <span>Effect</span>
+              </div>
             </div>
-            <div class="box">
-              <img src="https://source.unsplash.com/1000x804" />
-              <span>Hover</span>
-            </div>
-            <div class="box">
-              <img src="https://source.unsplash.com/1000x806" />
-              <span>Effect</span>
-            </div>
-          </div>
-          <div class="container">
-            <!-- <div class="box">
+            <div class="container">
+              <!-- <div class="box">
               <img src="https://source.unsplash.com/1000x800" />
               <span>CSS</span>
             </div>-->
-            <div class="box">
-              <img src="https://source.unsplash.com/1000x802" />
-              <span>Image</span>
-            </div>
-            <div class="box">
-              <img src="https://source.unsplash.com/1000x804" />
-              <span>Hover</span>
-            </div>
-            <div class="box">
-              <img src="https://source.unsplash.com/1000x806" />
-              <span>Effect</span>
+              <div class="box">
+                <img src="https://source.unsplash.com/1000x802" />
+                <span>Image</span>
+              </div>
+              <div class="box">
+                <img src="https://source.unsplash.com/1000x804" />
+                <span>Hover</span>
+              </div>
+              <div class="box">
+                <img src="https://source.unsplash.com/1000x806" />
+                <span>Effect</span>
+              </div>
             </div>
           </div>
+          <div class="contact">contact</div>
         </div>
       </section>
     </main>
     <!--<div class="circle1"></div> <div class="circle2"></div>-->
+    <script src="./main.js"></script>
   </body>
 </html>
