@@ -15,15 +15,14 @@
 .main-section {
   background-image: linear-gradient(
     to right,
-    rgba(255, 255, 255, 0.5),
-    rgba(255, 255, 255, 0.3)
+    rgba(255, 255, 255, 0.4),
+    rgba(255, 255, 255, 0.2)
   );
-
+  backdrop-filter: blur(2rem);
   width: 70vw;
   height: 80vh;
   border-radius: 0 30px 30px 30px;
 
-  backdrop-filter: blur(2rem);
   z-index: 1;
   border: 1px solid rgba(250, 255, 255, 0.1);
 
@@ -88,9 +87,12 @@
 .menu {
   background-image: linear-gradient(
     to right,
-    rgba(255, 255, 255, 0.5),
-    rgba(255, 255, 255, 0.3)
+    rgba(255, 255, 255, 0.3),
+    rgba(255, 255, 255, 0.1)
   );
+
+  border: 1px solid rgba(250, 255, 255, 0.1);
+
   width: 25%;
   border-radius: 0 30px 30px 30px;
   display: flex;
@@ -103,6 +105,8 @@
 .avatar-container p {
   text-align: center;
   margin-top: 5px;
+  color: white;
+  text-shadow: 1px 1px 5px black;
 }
 .avatar-container {
   margin-top: 30px;
@@ -150,15 +154,18 @@
 }
 
 .box > span {
-  font-size: 3.8vh;
+  font-size: 20px;
   display: block;
   text-align: center;
   height: 10vh;
   line-height: 2.6;
+  color: rgb(219, 216, 216);
+  text-shadow: 1px 1px 5px black;
 }
 
 .box:hover {
-  flex: 1 1 50%;
+  flex: 1 1 25%;
+
   cursor: pointer;
 }
 .box:hover > img {
@@ -435,11 +442,19 @@
 /*------------------------------------*/ /*------------------------------------*/
 /*------------------------------------*/ /*------------------------------------*/
 /*------------------------------------*/ /*------------------------------------*/
-
+.contact h2 {
+  margin: 40px;
+  color: white;
+  text-shadow: 1px 1px 5px black;
+  font-size: 24px;
+}
 .contact a {
   margin: 40px;
 }
-
+.contact {
+  margin-top: 80px;
+  margin-left: 40px;
+}
 /*------------------------------------*/ /*------------------------------------*/
 /*------------------------------------*/ /*------------------------------------*/
 /*------------------------------------*/ /*------------------------------------*/
