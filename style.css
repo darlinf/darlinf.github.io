@@ -142,15 +142,14 @@
 
 .fff {
   position: absolute;
-  top: 12.5vh;
-  left: 35vw;
+  top: 10.5vh;
+  left: 34.5vw;
   z-index: 1;
 }
 
 .fff2 {
   position: absolute;
-  top: 12.5vh;
-  left: 35vw;
+
   z-index: auto;
 }
 
@@ -412,6 +411,7 @@
 .projects {
   display: none;
   animation: pulse 0.5s ease-in-out;
+  width: 50vw;
 }
 
 .show-categories {

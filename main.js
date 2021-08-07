@@ -40,7 +40,7 @@ contactA.addEventListener("click", () => {
 
 let projectZIndex = document.getElementById("projectZIndex");
 let box1 = document.getElementById("box1");
-box1.addEventListener("mouseenter", () => {
+/*box1.addEventListener("mouseenter", () => {
   setTimeout(() => {
     projectZIndex.classList.add("fff2");
     box1.classList.add("box-z-indez");
@@ -50,4 +50,22 @@ box1.addEventListener("mouseenter", () => {
 box1.addEventListener("mouseleave", () => {
   projectZIndex.classList.remove("fff2");
   box1.classList.remove("box-z-indez");
+});*/
+
+let boxes = document.querySelectorAll(".box");
+
+console.log(boxes);
+boxes.forEach((item) => {
+  let clearTim;
+  item.addEventListener("mouseenter", () => {
+    clearTim = setTimeout(() => {
+      projectZIndex.classList.add("fff2");
+      item.classList.add("box-z-indez");
+    }, 1000);
+  });
+  item.addEventListener("mouseleave", () => {
+    clearTimeout(clearTim);
+    projectZIndex.classList.remove("fff2");
+    item.classList.remove("box-z-indez");
+  });
 });
