@@ -37,3 +37,17 @@ contactA.addEventListener("click", () => {
   projectsA.classList.remove("link-select");
   contactA.classList.add("link-select");
 });
+
+let projectZIndex = document.getElementById("projectZIndex");
+let box1 = document.getElementById("box1");
+box1.addEventListener("mouseenter", () => {
+  setTimeout(() => {
+    projectZIndex.classList.add("fff2");
+    box1.classList.add("box-z-indez");
+  }, 1000);
+});
+
+box1.addEventListener("mouseleave", () => {
+  projectZIndex.classList.remove("fff2");
+  box1.classList.remove("box-z-indez");
+});

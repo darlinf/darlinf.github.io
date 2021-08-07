@@ -135,6 +135,25 @@
   height: 40vh;
 }
 
+.box-z-indez {
+  z-index: 1;
+  position: relative;
+}
+
+.fff {
+  position: absolute;
+  top: 12.5vh;
+  left: 35vw;
+  z-index: 1;
+}
+
+.fff2 {
+  position: absolute;
+  top: 12.5vh;
+  left: 35vw;
+  z-index: auto;
+}
+
 .box {
   flex: 1;
   overflow: hidden;
