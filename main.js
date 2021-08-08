@@ -53,19 +53,27 @@ box1.addEventListener("mouseleave", () => {
 });*/
 
 let boxes = document.querySelectorAll(".box");
+let boxesP = document.querySelectorAll(".box p");
+
+console.log(boxesP);
 
 console.log(boxes);
 boxes.forEach((item) => {
   let clearTim;
+  let i = 0;
   item.addEventListener("mouseenter", () => {
     clearTim = setTimeout(() => {
       projectZIndex.classList.add("fff2");
       item.classList.add("box-z-indez");
+
+      boxesP[i].classList.add("box-p-show");
     }, 1000);
   });
   item.addEventListener("mouseleave", () => {
     clearTimeout(clearTim);
     projectZIndex.classList.remove("fff2");
     item.classList.remove("box-z-indez");
+
+    boxesP[0].classList.remove("box-p-show");
   });
 });

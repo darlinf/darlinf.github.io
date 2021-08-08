@@ -135,6 +135,25 @@
   height: 40vh;
 }
 
+.box p {
+  color: white;
+  font-size: 15px;
+  position: absolute;
+  top: 270px;
+  width: 21.5vw;
+  height: 100px;
+  z-index: 1;
+  left: 32px;
+  text-shadow: 1px 1px 5px black;
+  opacity: 0;
+  text-align: center;
+}
+
+.box-p-show {
+  opacity: 1 !important;
+  transition: all 2s;
+}
+
 .box-z-indez {
   z-index: 1;
   position: relative;
@@ -149,7 +168,6 @@
 
 .fff2 {
   position: absolute;
-
   z-index: auto;
 }
 
@@ -159,7 +177,7 @@
   transition: 0.5s;
   margin: 0 2%;
   box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
-  line-height: 0;
+  /*line-height: 0;*/
   border-radius: 20px;
   color: rgb(190, 190, 190);
 }
