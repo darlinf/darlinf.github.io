@@ -120,7 +120,57 @@
 .sidebar-links {
   text-align: center;
   font-size: 20px;
-  margin-top: 40px;
+  position: absolute;
+  display: flex;
+  height: 80vh;
+  align-items: center;
+  top: 5vh;
+}
+
+/*------------------------------------*/ /*------------------------------------*/
+/*------------------------------------*/ /*------------------------------------*/
+/*------------------------------------*/ /*------------------------------------*/
+.project-buttons-down {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  width: 22vw;
+  top: 70vh;
+}
+
+.project-buttons {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  width: 22vw;
+}
+
+.project-buttons div {
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.4),
+    rgba(255, 255, 255, 0.2)
+  );
+  backdrop-filter: blur(2rem);
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  text-align: center;
+  text-shadow: 1px 1px 5px black;
+  width: 100%;
+  opacity: 0;
+}
+
+.project-buttons a {
+  text-decoration: none;
+  color: white;
+  padding-left: 5px;
+}
+
+.project-buttons svg {
+  padding-left: 5px;
+  text-shadow: 1px 1px 5px black;
+  color: white;
 }
 
 /*------------------------------------*/ /*------------------------------------*/
@@ -135,7 +185,12 @@
   height: 40vh;
 }
 
-.box p {
+.project-description1,
+.project-description2,
+.project-description3,
+.project-description4,
+.project-description5,
+.project-description6 {
   color: white;
   font-size: 15px;
   position: absolute;
@@ -145,18 +200,61 @@
   z-index: 1;
   left: 32px;
   text-shadow: 1px 1px 5px black;
-  opacity: 0;
   text-align: center;
+  opacity: 0;
+}
+.box-p-show {
+  opacity: 1;
+  transition: all 2s;
 }
 
-.box-p-show {
-  opacity: 1 !important;
-  transition: all 2s;
+.box:hover > p {
+  animation: box-atributes-show 1s 1s ease-in-out forwards;
+}
+
+.box:hover > .project-buttons div {
+  animation: box-atributes-show 1s 1s ease-in-out forwards;
+}
+
+@keyframes box-atributes-show {
+  100% {
+    opacity: 1;
+  }
+}
+
+.project-description1 {
+  top: 37vh;
+  left: 2.35vw;
+}
+
+.project-description2 {
+  top: 37vh;
+  left: 14.3vw;
+}
+
+.project-description3 {
+  top: 37vh;
+  left: 26.3vw;
+}
+
+.project-description4 {
+  top: 37vh;
+  left: 2.35vw;
+}
+
+.project-description5 {
+  top: 37vh;
+  left: 14.3vw;
+}
+
+.project-description6 {
+  top: 37vh;
+  left: 26.3vw;
 }
 
 .box-z-indez {
   z-index: 1;
-  position: relative;
+  /*position: relative;*/
 }
 
 .fff {
@@ -461,15 +559,19 @@
 .abaut-container p {
   margin-top: 40px;
 }
+
+.abaut-container p:nth-child(1) {
+  margin-top: 0;
+}
+
 .abaut-container {
   display: flex;
   color: rgba(255, 255, 255, 0.801);
-  width: 100%;
-  height: 100%;
+  align-items: center;
   justify-content: center;
   font-size: 24px;
   text-shadow: 1px 1px 5px black;
-  margin-top: 60px;
+  height: 75vh;
 }
 .abaut-container > :nth-child(2) {
   position: relative;
