@@ -145,11 +145,19 @@
   width: 22vw;
 }
 
+.project-buttons a:hover {
+  color: rgb(94, 94, 94);
+}
+
+.project-buttons div:nth-child(2) {
+  display: none;
+}
+
 .project-buttons div {
   background-image: linear-gradient(
     to right,
-    rgba(255, 255, 255, 0.4),
-    rgba(255, 255, 255, 0.2)
+    rgba(199, 199, 199, 0.4),
+    rgba(180, 180, 180, 0.644)
   );
   backdrop-filter: blur(2rem);
   margin: 5px;
@@ -162,7 +170,6 @@
 }
 
 .project-buttons a {
-  text-decoration: none;
   color: white;
   padding-left: 5px;
 }
@@ -238,12 +245,12 @@
 }
 
 .project-description4 {
-  top: 37vh;
+  top: 33vh;
   left: 2.35vw;
 }
 
 .project-description5 {
-  top: 37vh;
+  top: 31.5vh;
   left: 14.3vw;
 }
 
@@ -586,6 +593,16 @@
   color: white;
   text-shadow: 1px 1px 5px black;
   font-size: 24px;
+  text-align: center;
+}
+.githup {
+  position: relative;
+  top: 50px;
+}
+
+.linkedin {
+  position: relative;
+  top: 58px;
 }
 .contact a {
   margin: 40px;
