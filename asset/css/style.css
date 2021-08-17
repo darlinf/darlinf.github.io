@@ -208,6 +208,7 @@
   left: 32px;
   text-shadow: 1px 1px 5px black;
   text-align: center;
+  z-index: -1;
   opacity: 0;
 }
 .box-p-show {
@@ -255,7 +256,7 @@
 }
 
 .project-description6 {
-  top: 37vh;
+  top: 31.5vh;
   left: 26.3vw;
 }
 
@@ -302,6 +303,10 @@
   line-height: 2.6;
   color: rgb(219, 216, 216);
   text-shadow: 1px 1px 5px black;
+}
+
+.box:hover p {
+  z-index: auto;
 }
 
 .box:hover {
