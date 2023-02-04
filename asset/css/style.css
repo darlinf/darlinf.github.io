@@ -113,9 +113,9 @@
 }
 .avatar-img {
   width: 220px;
-    height: 220px;
-    border-radius: 20px;
-    margin-bottom: 10px;
+  height: 220px;
+  border-radius: 20px;
+  margin-bottom: 10px;
 }
 
 .sidebar-links {
@@ -629,16 +629,18 @@
   .menu-toggle-button {
     display: block;
   }
-  .nav__nav {
-    position: absolute;
-    top: 8rem;
-    left: 2rem;
-    opacity: 0;
-    transform: translateX(-100%);
-    text-align: left;
-    transition: transform var(--duration) cubic-bezier(0.8, 0, 0.2, 1),
-      opacity var(--duration);
-    z-index: 100;
+  .avatar-container :nth-child(3) {
+    margin-top: 15px;
+  }
+  .avatar-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .avatar-img {
+    width: 70px;
+    height: 70px;
   }
   .menu::before {
     content: "";
@@ -651,9 +653,72 @@
     height: 0;
   }
   .main-section {
+    width: 100% !important;
+    height: 100% !important;
+  }
+  .abaut-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+  }
+  .navbar-links li {
+    margin: 0 !important;
+  }
+
+  /*contact*/
+  .contact div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly !important;
+    height: 40vh;
+  }
+  .contact {
+    margin: 0;
+    margin-top: 24vh;
+  }
+  .contact a {
+    margin: 0;
+  }
+  .linkedin {
+    top: 0;
+  }
+  .githup {
+    top: 0;
+  }
+  .contact h2 {
+    margin: 0;
+  }
+  .main-section {
     width: 90vw;
     height: 90vh;
   }
+  /* .container > :nth-child(3) {
+    display: none;
+  }*/
+  /*.nav__nav {
+    position: absolute;
+    top: 8rem;
+    left: 2rem;
+    opacity: 0;
+    transform: translateX(-100%);
+    text-align: left;
+    transition: transform var(--duration) cubic-bezier(0.8, 0, 0.2, 1),
+      opacity var(--duration);
+    z-index: 100;
+  }*/
+  /* .menu::before {
+    content: "";
+    width: 0;
+    height: 0;
+  }
+  .menu::after {
+    content: "";
+    width: 0;
+    height: 0;
+  }*/
 }
 
 @keyframes shake {
