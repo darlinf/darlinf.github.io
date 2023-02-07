@@ -626,37 +626,89 @@
 }
 
 @media screen and (max-width: 480px) {
-  .main-container {
-    /*width: 155vw !important;
-    width: 800px; 
-    height: 100vh;
-    width: 150vw;*/
+  .project-description1,
+  .project-description2,
+  .project-description3,
+  .project-description4,
+  .project-description5,
+  .project-description6 {
+    width: 120%;
   }
-  /*.container {
-    width: 120vw !important;
-  }*/
+
+  .project-buttons-down {
+    all: unset;
+  }
+
+  .project-buttons {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+  }
+
+  .project-description1 {
+    top: 20vh;
+    left: 1vw;
+  }
+
+  .project-description2 {
+    top: 30vh;
+    left: 1vw;
+  }
+
+  .project-description3 {
+    top: 40vh;
+    left: 1vw;
+  }
+
+  .project-description4 {
+    top: 60vh;
+    left: 1vw;
+  }
+
+  .project-description5 {
+    top: 70vh;
+    left: 1vw;
+  }
+
+  .project-description6 {
+    top: 80vh;
+    left: 1vw;
+  }
+
+  .project-buttons {
+    width: 120%;
+  }
+
+  .box-show {
+    margin-bottom: 105px !important;
+  }
+
+  span {
+    margin-bottom: 50px !important;
+  }
+
+  .box > img {
+    height: calc(100% - 5vh);
+  }
+
+  .box {
+    margin: 5px;
+  }
+
   .container .box {
-    width: 260px;
-    /*position: relative;
-    left: -15px;*/
+    width: 120%;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.432);
   }
 
   .container {
-    /*   position: absolute;
-    top: 10px;
-   width: 290px !important;
-    position: relative;
-    left: -20px;
-    top: -100px;*/
+    padding: 0;
     flex-direction: column;
   }
-  /*.container .box:nth-child(1) {
-    display: none;
-  }*/
 
   .abaut-container > div:nth-child(1) {
     margin-bottom: 20px;
   }
+
   .main-section {
     border-radius: 0;
   }
@@ -733,30 +785,6 @@
     width: 90vw;
     height: 90vh;
   }
-  /* .container > :nth-child(3) {
-    display: none;
-  }*/
-  /*.nav__nav {
-    position: absolute;
-    top: 8rem;
-    left: 2rem;
-    opacity: 0;
-    transform: translateX(-100%);
-    text-align: left;
-    transition: transform var(--duration) cubic-bezier(0.8, 0, 0.2, 1),
-      opacity var(--duration);
-    z-index: 100;
-  }*/
-  /* .menu::before {
-    content: "";
-    width: 0;
-    height: 0;
-  }
-  .menu::after {
-    content: "";
-    width: 0;
-    height: 0;
-  }*/
 }
 
 @keyframes shake {

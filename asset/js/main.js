@@ -43,6 +43,11 @@ let boxes = document.querySelectorAll(".box");
 
 console.log(boxes);
 boxes.forEach((item, i) => {
+  setTimeout(() => {
+    item.classList.remove("box-show");
+  }, 200);
+  //item.classList.remove("box-show");
+
   let clearTim;
 
   item.addEventListener("mouseenter", () => {
