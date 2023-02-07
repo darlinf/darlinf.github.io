@@ -626,6 +626,12 @@
 }
 
 @media screen and (max-width: 480px) {
+  .container a {
+    pointer-events: none;
+  }
+  .box-z-indez a {
+    pointer-events: all;
+  }
   .project-description1,
   .project-description2,
   .project-description3,
